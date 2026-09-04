@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://oscardanielmurillo06-oss.github.io/iOrderUP/sitemap.xml
