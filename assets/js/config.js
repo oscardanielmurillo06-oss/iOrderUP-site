@@ -35,7 +35,7 @@ window.IORDERUP_CONFIG = {
   // accepts a POST with fields: name, restaurant, phone, email.
   // Leave empty and the form stays in its honest "not connected yet"
   // state instead of pretending to send anywhere.
-  demoFormEndpoint: "https://formspree.io/f/xeaq1qwj",
+  demoFormEndpoint: "https://formspree.io/f/mrpgabbq",
 
   // Shown in the footer copyright line.
   currentYear: new Date().getFullYear(),
