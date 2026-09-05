@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  Assumes default GitHub Pages hosting for this repo
-  (oscardanielmurillo06-oss/iOrderUP). If a custom domain is used instead,
-  update every <loc> below (and robots.txt, and the canonical/og:url tags
-  in index.html, privacy.html, and terms.html) to match.
--->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://oscardanielmurillo06-oss.github.io/iOrderUP/</loc>
+    <loc>https://getiorderup.com/</loc>
   </url>
   <url>
-    <loc>https://oscardanielmurillo06-oss.github.io/iOrderUP/privacy.html</loc>
+    <loc>https://getiorderup.com/privacy.html</loc>
   </url>
   <url>
-    <loc>https://oscardanielmurillo06-oss.github.io/iOrderUP/terms.html</loc>
+    <loc>https://getiorderup.com/terms.html</loc>
   </url>
 </urlset>
