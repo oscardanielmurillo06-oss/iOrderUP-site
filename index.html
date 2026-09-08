@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to content</a>
+  <a class="skip-link" href="#main-content" data-i18n="common.skipToContent">Skip to content</a>
 
   <!-- Icon sprite (shared line icons, currentColor only) -->
   <svg style="display:none" aria-hidden="true">
@@ -50,15 +50,20 @@
         <span class="brand-mark">iO</span>
         <span data-config="businessName">iOrderUP</span>
       </a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <button class="nav-toggle" aria-label="Toggle navigation" data-i18n-aria="common.navToggleAria" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <div class="nav-links">
-        <a href="#what-it-does">What It Does</a>
-        <a href="#why-different">Why It's Different</a>
-        <a href="#demo">In Action</a>
-        <a href="#contact">Contact</a>
-        <a href="#contact" class="btn btn-primary">Book a Demo</a>
+        <a href="#what-it-does" data-i18n="common.nav.whatItDoes">What It Does</a>
+        <a href="#why-different" data-i18n="common.nav.whyDifferent">Why It's Different</a>
+        <a href="#demo" data-i18n="common.nav.inAction">In Action</a>
+        <a href="#contact" data-i18n="common.nav.contact">Contact</a>
+        <a href="#contact" class="btn btn-primary" data-i18n="common.nav.bookDemo">Book a Demo</a>
+        <div class="lang-switch" role="group" aria-label="Language" data-i18n-aria="common.lang.groupAria">
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="true" aria-label="Switch to English" data-i18n-aria="common.lang.en">EN</button>
+          <button type="button" class="lang-btn" data-lang="es" aria-pressed="false" aria-label="Switch to Spanish" data-i18n-aria="common.lang.es">ES</button>
+          <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false" aria-label="Switch to Portuguese" data-i18n-aria="common.lang.pt">PT</button>
+        </div>
       </div>
     </nav>
   </header>
@@ -69,56 +74,55 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <span class="eyebrow"><svg class="icon"><use href="#icon-phone"/></svg> AI Phone Assistant for Restaurants &amp; Food Trucks</span>
-          <h1>Capture More Phone Orders, Even During the Rush</h1>
-          <p class="lede">iOrderUP helps you handle more calls, capture more phone orders, and reduce interruptions to your staff — in English, Spanish, and Portuguese, 24/7.</p>
+          <span class="eyebrow"><svg class="icon"><use href="#icon-phone"/></svg> <span data-i18n="home.hero.eyebrow">AI Phone Assistant for Restaurants &amp; Food Trucks</span></span>
+          <h1 data-i18n="home.hero.h1">Capture More Phone Orders, Even During the Rush</h1>
+          <p class="lede" data-i18n="home.hero.lede">iOrderUP helps you handle more calls, capture more phone orders, and reduce interruptions to your staff — in English, Spanish, and Portuguese, 24/7.</p>
           <div class="hero-actions">
-            <a href="#contact" class="btn btn-inverse">Book a Demo</a>
-            <a href="#demo" class="btn btn-outline-inverse">Hear iOrderUP in Action</a>
+            <a href="#contact" class="btn btn-inverse" data-i18n="home.hero.ctaBook">Book a Demo</a>
+            <a href="#demo" class="btn btn-outline-inverse" data-i18n="home.hero.ctaHear">Hear iOrderUP in Action</a>
           </div>
-          <div class="hero-langs">
-            <span class="pill">English</span>
-            <span class="pill">Español</span>
-            <span class="pill">Português</span>
+          <div class="lang-support">
+            <span class="lang-support-title" data-i18n="home.hero.langTitle">Multilingual phone support</span>
+            <span class="lang-support-copy" data-i18n="home.hero.langCopy">Currently optimized for English, Spanish and Portuguese.</span>
           </div>
         </div>
 
         <div>
         <div class="call-mock">
           <div class="call-mock-head">
-            <span class="call-mock-title">Illustrative Product Demo</span>
+            <span class="call-mock-title" data-i18n="home.hero.mockTitle">Illustrative Product Demo</span>
             <span class="live-dot" aria-hidden="true"></span>
           </div>
           <div class="call-row">
             <div class="call-avatar"><svg class="icon"><use href="#icon-phone"/></svg></div>
             <div class="call-info">
               <div class="call-number">(843) 555-0148</div>
-              <div class="call-note">Taking to-go order…</div>
+              <div class="call-note" data-i18n="home.hero.mockNote1">Taking to-go order…</div>
             </div>
-            <span class="status-chip">Line 1</span>
+            <span class="status-chip" data-i18n="home.hero.mockStatus1">Line 1</span>
           </div>
           <div class="call-row">
             <div class="call-avatar"><svg class="icon"><use href="#icon-phone"/></svg></div>
             <div class="call-info">
               <div class="call-number">(843) 555-0172</div>
-              <div class="call-note">Answered instantly</div>
+              <div class="call-note" data-i18n="home.hero.mockNote2">Answered instantly</div>
             </div>
-            <span class="status-chip">Line 2</span>
+            <span class="status-chip" data-i18n="home.hero.mockStatus2">Line 2</span>
           </div>
           <div class="call-row">
             <div class="call-avatar"><svg class="icon"><use href="#icon-phone"/></svg></div>
             <div class="call-info">
               <div class="call-number">(843) 555-0193</div>
-              <div class="call-note">Catering request</div>
+              <div class="call-note" data-i18n="home.hero.mockNote3">Catering request</div>
             </div>
-            <span class="status-chip is-solid">Transferring</span>
+            <span class="status-chip is-solid" data-i18n="home.hero.mockStatus3">Transferring</span>
           </div>
           <div class="call-mock-foot">
             <svg class="icon"><use href="#icon-check"/></svg>
-            Handles multiple calls at once
+            <span data-i18n="home.hero.mockFoot">Handles multiple calls at once</span>
           </div>
         </div>
-        <p class="mock-caption mock-caption-dark">Illustrative product demo — example calls, not real customer data.</p>
+        <p class="mock-caption mock-caption-dark" data-i18n="home.hero.mockCaption">Illustrative product demo — example calls, not real customer data.</p>
         </div>
       </div>
     </section>
@@ -127,30 +131,30 @@
     <section id="problems">
       <div class="container">
         <div class="section-head centered">
-          <span class="eyebrow">Problems We Solve</span>
-          <h2>The phone is costing your restaurant orders</h2>
-          <p class="lede">These are the moments that quietly cost restaurants and food trucks money, every single shift.</p>
+          <span class="eyebrow" data-i18n="home.problems.eyebrow">Problems We Solve</span>
+          <h2 data-i18n="home.problems.h2">The phone is costing your restaurant orders</h2>
+          <p class="lede" data-i18n="home.problems.lede">These are the moments that quietly cost restaurants and food trucks money, every single shift.</p>
         </div>
         <div class="grid grid-2x2">
           <div class="card">
             <div class="card-icon"><svg class="icon"><use href="#icon-phone"/></svg></div>
-            <h3>Missed calls during rush hours</h3>
-            <p>When the line's out the door and the kitchen's slammed, nobody's free to pick up — so the phone just rings.</p>
+            <h3 data-i18n="home.problems.card1.title">Missed calls during rush hours</h3>
+            <p data-i18n="home.problems.card1.body">When the line's out the door and the kitchen's slammed, nobody's free to pick up — so the phone just rings.</p>
           </div>
           <div class="card">
             <div class="card-icon"><svg class="icon"><use href="#icon-user"/></svg></div>
-            <h3>Staff interrupted by phone calls</h3>
-            <p>Every ringing phone pulls someone away from cooking, serving, or the register to answer a question they've answered fifty times.</p>
+            <h3 data-i18n="home.problems.card2.title">Staff interrupted by phone calls</h3>
+            <p data-i18n="home.problems.card2.body">Every ringing phone pulls someone away from cooking, serving, or the register to answer a question they've answered fifty times.</p>
           </div>
           <div class="card">
             <div class="card-icon"><svg class="icon"><use href="#icon-ticket"/></svg></div>
-            <h3>Lost orders when multiple customers call</h3>
-            <p>When two or three customers call at once, only one gets through — the rest hear a busy signal and order somewhere else.</p>
+            <h3 data-i18n="home.problems.card3.title">Lost orders when multiple customers call</h3>
+            <p data-i18n="home.problems.card3.body">When two or three customers call at once, only one gets through — the rest hear a busy signal and order somewhere else.</p>
           </div>
           <div class="card">
             <div class="card-icon"><svg class="icon"><use href="#icon-globe"/></svg></div>
-            <h3>Language barriers with customers</h3>
-            <p>A caller who's more comfortable in Spanish or Portuguese can get rushed off the phone — or give up before ordering at all.</p>
+            <h3 data-i18n="home.problems.card4.title">Language barriers with customers</h3>
+            <p data-i18n="home.problems.card4.body">A caller who's more comfortable in Spanish or Portuguese can get rushed off the phone — or give up before ordering at all.</p>
           </div>
         </div>
       </div>
@@ -160,40 +164,40 @@
     <section id="what-it-does" class="bg-alt">
       <div class="container">
         <div class="section-head centered">
-          <span class="eyebrow">What iOrderUP Does</span>
-          <h2>Built to capture orders, not just calls</h2>
-          <p class="lede">Every feature exists to answer more calls, take more orders, and keep your kitchen focused on cooking.</p>
+          <span class="eyebrow" data-i18n="home.what.eyebrow">What iOrderUP Does</span>
+          <h2 data-i18n="home.what.h2">Built to capture orders, not just calls</h2>
+          <p class="lede" data-i18n="home.what.lede">Every feature exists to answer more calls, take more orders, and keep your kitchen focused on cooking.</p>
         </div>
         <div class="grid">
           <div class="card spotlight">
             <div class="card-icon"><svg class="icon"><use href="#icon-phone"/></svg></div>
-            <h3>Handle more calls during your busiest hours</h3>
-            <p>Less hold music, less voicemail — iOrderUP helps you pick up faster, day or night, especially during your busiest rush.</p>
+            <h3 data-i18n="home.what.card1.title">Handle more calls during your busiest hours</h3>
+            <p data-i18n="home.what.card1.body">Less hold music, less voicemail — iOrderUP helps you pick up faster, day or night, especially during your busiest rush.</p>
           </div>
           <div class="card">
             <div class="card-icon"><svg class="icon"><use href="#icon-ticket"/></svg></div>
-            <h3>Capture more phone orders</h3>
-            <p>Accurate to-go orders, confirmed item by item — quantities, prices, and notes — captured straight into your queue.</p>
+            <h3 data-i18n="home.what.card2.title">Capture more phone orders</h3>
+            <p data-i18n="home.what.card2.body">Accurate to-go orders, confirmed item by item — quantities, prices, and notes — captured straight into your queue.</p>
           </div>
           <div class="card">
             <div class="card-icon"><svg class="icon"><use href="#icon-book"/></svg></div>
-            <h3>Answers menu &amp; hours questions</h3>
-            <p>From what's in a dish to whether you're open on Sunday, callers get an instant, accurate answer.</p>
+            <h3 data-i18n="home.what.card3.title">Answers menu &amp; hours questions</h3>
+            <p data-i18n="home.what.card3.body">From what's in a dish to whether you're open on Sunday, callers get an instant, accurate answer.</p>
           </div>
           <div class="card">
             <div class="card-icon"><svg class="icon"><use href="#icon-alert"/></svg></div>
-            <h3>Captures modifications &amp; allergy notes</h3>
-            <p>Substitutions, special requests, and allergy notes are captured accurately and passed along with the order for your kitchen to review.</p>
+            <h3 data-i18n="home.what.card4.title">Captures modifications &amp; allergy notes</h3>
+            <p data-i18n="home.what.card4.body">Substitutions, special requests, and allergy notes are captured accurately and passed along with the order for your kitchen to review.</p>
           </div>
           <div class="card">
             <div class="card-icon"><svg class="icon"><use href="#icon-user"/></svg></div>
-            <h3>Transfers to staff only when needed</h3>
-            <p>Complaints, large catering requests, anything outside the script — routed straight to a person.</p>
+            <h3 data-i18n="home.what.card5.title">Transfers to staff only when needed</h3>
+            <p data-i18n="home.what.card5.body">Complaints, large catering requests, anything outside the script — routed straight to a person.</p>
           </div>
           <div class="card">
             <div class="card-icon"><svg class="icon"><use href="#icon-globe"/></svg></div>
-            <h3>Speaks three languages</h3>
-            <p>English, Spanish, and Portuguese, handled naturally — no customer lost to a language barrier on the phone.</p>
+            <h3 data-i18n="home.what.card6.title">Speaks three languages</h3>
+            <p data-i18n="home.what.card6.body">English, Spanish, and Portuguese, handled naturally — no customer lost to a language barrier on the phone.</p>
           </div>
         </div>
       </div>
@@ -203,27 +207,27 @@
     <section id="how-it-works">
       <div class="container">
         <div class="section-head centered">
-          <span class="eyebrow">How It Works</span>
-          <h2>Live on your phone line in three simple steps</h2>
+          <span class="eyebrow" data-i18n="home.how.eyebrow">How It Works</span>
+          <h2 data-i18n="home.how.h2">Live on your phone line in three simple steps</h2>
         </div>
         <div class="steps">
           <div class="step">
             <span class="step-index">1</span>
             <div class="step-icon"><svg class="icon"><use href="#icon-phone"/></svg></div>
-            <h3>Connect or forward your existing number</h3>
-            <p>Depending on your current phone setup, we connect directly or forward your existing line — so customers keep calling the number they already know.</p>
+            <h3 data-i18n="home.how.step1.title">Connect or forward your existing number</h3>
+            <p data-i18n="home.how.step1.body">Depending on your current phone setup, we connect directly or forward your existing line — so customers keep calling the number they already know.</p>
           </div>
           <div class="step">
             <span class="step-index">2</span>
             <div class="step-icon"><svg class="icon"><use href="#icon-book"/></svg></div>
-            <h3>Load your menu &amp; rules</h3>
-            <p>We load your menu, prices, hours, and house rules so it answers exactly the way your team would.</p>
+            <h3 data-i18n="home.how.step2.title">Load your menu &amp; rules</h3>
+            <p data-i18n="home.how.step2.body">We load your menu, prices, hours, and house rules so it answers exactly the way your team would.</p>
           </div>
           <div class="step">
             <span class="step-index">3</span>
             <div class="step-icon"><svg class="icon"><use href="#icon-bolt"/></svg></div>
-            <h3>Go live and start capturing phone orders</h3>
-            <p>Calls get answered, orders get captured, and staff are looped in only when it's truly needed.</p>
+            <h3 data-i18n="home.how.step3.title">Go live and start capturing phone orders</h3>
+            <p data-i18n="home.how.step3.body">Calls get answered, orders get captured, and staff are looped in only when it's truly needed.</p>
           </div>
         </div>
       </div>
@@ -233,88 +237,88 @@
     <section id="why-different" class="bg-alt">
       <div class="container">
         <div class="section-head centered">
-          <span class="eyebrow">Why iOrderUP Is Different</span>
-          <h2>Not an answering service. An ordering system.</h2>
-          <p class="lede">Many basic answering services simply take a message. iOrderUP is built specifically to capture the order — and knows when a call needs a person instead.</p>
+          <span class="eyebrow" data-i18n="home.why.eyebrow">Why iOrderUP Is Different</span>
+          <h2 data-i18n="home.why.h2">Not an answering service. An ordering system.</h2>
+          <p class="lede" data-i18n="home.why.lede">Many basic answering services simply take a message. iOrderUP is built specifically to capture the order — and knows when a call needs a person instead.</p>
         </div>
 
         <div class="diff-grid">
           <div class="compare-card is-them">
-            <h3>Basic Message-Taking Service</h3>
+            <h3 data-i18n="home.why.them.title">Basic Message-Taking Service</h3>
             <ul class="compare-list">
-              <li><svg class="icon"><use href="#icon-x"/></svg> Primarily takes messages or routes calls</li>
-              <li><svg class="icon"><use href="#icon-x"/></svg> Restaurant-specific menu knowledge may be limited</li>
-              <li><svg class="icon"><use href="#icon-x"/></svg> Call handling capabilities vary by provider</li>
-              <li><svg class="icon"><use href="#icon-x"/></svg> May require staff involvement to complete an order</li>
+              <li><svg class="icon"><use href="#icon-x"/></svg> <span data-i18n="home.why.them.li1">Primarily takes messages or routes calls</span></li>
+              <li><svg class="icon"><use href="#icon-x"/></svg> <span data-i18n="home.why.them.li2">Restaurant-specific menu knowledge may be limited</span></li>
+              <li><svg class="icon"><use href="#icon-x"/></svg> <span data-i18n="home.why.them.li3">Call handling capabilities vary by provider</span></li>
+              <li><svg class="icon"><use href="#icon-x"/></svg> <span data-i18n="home.why.them.li4">May require staff involvement to complete an order</span></li>
             </ul>
           </div>
           <div class="compare-card is-us">
-            <h3>iOrderUP</h3>
+            <h3 data-i18n="home.why.us.title">iOrderUP</h3>
             <ul class="compare-list">
-              <li><svg class="icon"><use href="#icon-check"/></svg> Built specifically around restaurant phone workflows</li>
-              <li><svg class="icon"><use href="#icon-check"/></svg> Captures phone orders during the call</li>
-              <li><svg class="icon"><use href="#icon-check"/></svg> Uses your restaurant's menu, hours, and operating rules</li>
-              <li><svg class="icon"><use href="#icon-check"/></svg> Handles multiple calls simultaneously</li>
-              <li><svg class="icon"><use href="#icon-check"/></svg> Escalates to staff only when necessary</li>
-              <li><svg class="icon"><use href="#icon-check"/></svg> English, Spanish, and Portuguese support</li>
+              <li><svg class="icon"><use href="#icon-check"/></svg> <span data-i18n="home.why.us.li1">Built specifically around restaurant phone workflows</span></li>
+              <li><svg class="icon"><use href="#icon-check"/></svg> <span data-i18n="home.why.us.li2">Captures phone orders during the call</span></li>
+              <li><svg class="icon"><use href="#icon-check"/></svg> <span data-i18n="home.why.us.li3">Uses your restaurant's menu, hours, and operating rules</span></li>
+              <li><svg class="icon"><use href="#icon-check"/></svg> <span data-i18n="home.why.us.li4">Handles multiple calls simultaneously</span></li>
+              <li><svg class="icon"><use href="#icon-check"/></svg> <span data-i18n="home.why.us.li5">Escalates to staff only when necessary</span></li>
+              <li><svg class="icon"><use href="#icon-check"/></svg> <span data-i18n="home.why.us.li6">English, Spanish, and Portuguese support</span></li>
             </ul>
           </div>
         </div>
 
-        <p class="mock-caption"><svg class="icon" style="width:0.85em;height:0.85em;"><use href="#icon-info"/></svg> Illustrative product demo — example calls and orders, not real customer data.</p>
+        <p class="mock-caption"><svg class="icon" style="width:0.85em;height:0.85em;"><use href="#icon-info"/></svg> <span data-i18n="home.why.caption">Illustrative product demo — example calls and orders, not real customer data.</span></p>
         <div class="product-panels">
           <div class="panel">
             <div class="panel-head">
-              <h3><svg class="icon"><use href="#icon-phone"/></svg> Incoming Calls</h3>
-              <span class="panel-tag">Example</span>
+              <h3><svg class="icon"><use href="#icon-phone"/></svg> <span data-i18n="home.why.panelCalls.title">Incoming Calls</span></h3>
+              <span class="panel-tag" data-i18n="home.why.panelCalls.tag">Example</span>
             </div>
             <div class="panel-body calls-list">
               <div class="call-row">
                 <div class="call-avatar">JM</div>
                 <div class="call-info">
                   <div class="call-number">(843) 555-0148</div>
-                  <div class="call-note">2 items, no substitutions</div>
+                  <div class="call-note" data-i18n="home.why.panelCalls.row1Note">2 items, no substitutions</div>
                 </div>
-                <span class="status-chip is-solid">Answered</span>
+                <span class="status-chip is-solid" data-i18n="home.why.panelCalls.row1Status">Answered</span>
               </div>
               <div class="call-row">
                 <div class="call-avatar">—</div>
                 <div class="call-info">
                   <div class="call-number">(843) 555-0172</div>
-                  <div class="call-note">Answered while Line 1 is active</div>
+                  <div class="call-note" data-i18n="home.why.panelCalls.row2Note">Answered while Line 1 is active</div>
                 </div>
-                <span class="status-chip">Simultaneous</span>
+                <span class="status-chip" data-i18n="home.why.panelCalls.row2Status">Simultaneous</span>
               </div>
               <div class="call-row">
                 <div class="call-avatar">—</div>
                 <div class="call-info">
                   <div class="call-number">(843) 555-0193</div>
-                  <div class="call-note">Large catering request</div>
+                  <div class="call-note" data-i18n="home.why.panelCalls.row3Note">Large catering request</div>
                 </div>
-                <span class="status-chip">Transferred</span>
+                <span class="status-chip" data-i18n="home.why.panelCalls.row3Status">Transferred</span>
               </div>
             </div>
           </div>
 
           <div class="panel">
             <div class="panel-head">
-              <h3><svg class="icon"><use href="#icon-ticket"/></svg> Order</h3>
-              <span class="panel-tag">Example ticket</span>
+              <h3><svg class="icon"><use href="#icon-ticket"/></svg> <span data-i18n="home.why.panelOrder.title">Order</span></h3>
+              <span class="panel-tag" data-i18n="home.why.panelOrder.tag">Example ticket</span>
             </div>
             <div class="panel-body">
               <div class="ticket">
                 <div class="ticket-head">
-                  <span class="num">#3021 · To-Go</span>
-                  <span class="via">Via Phone</span>
+                  <span class="num">#3021 · <span data-i18n="home.why.panelOrder.toGo">To-Go</span></span>
+                  <span class="via" data-i18n="home.why.panelOrder.via">Via Phone</span>
                 </div>
                 <ul class="ticket-items">
-                  <li><span><span class="qty">1x</span>Shrimp &amp; Grits</span><span>$16.00</span></li>
-                  <li><span><span class="qty">1x</span>Fried Green Tomato Plate</span><span>$11.00</span></li>
-                  <li><span><span class="qty">2x</span>Sweet Tea</span><span>$6.00</span></li>
+                  <li><span><span class="qty">1x</span><span data-i18n="home.why.panelOrder.item1">Shrimp &amp; Grits</span></span><span>$16.00</span></li>
+                  <li><span><span class="qty">1x</span><span data-i18n="home.why.panelOrder.item2">Fried Green Tomato Plate</span></span><span>$11.00</span></li>
+                  <li><span><span class="qty">2x</span><span data-i18n="home.why.panelOrder.item3">Sweet Tea</span></span><span>$6.00</span></li>
                 </ul>
                 <div class="ticket-tags">
-                  <span class="tag-allergy"><svg class="icon" style="width:0.85em;height:0.85em;"><use href="#icon-alert"/></svg> Shellfish allergy — no shrimp on side salad</span>
-                  <span class="tag-note">No substitutions</span>
+                  <span class="tag-allergy"><svg class="icon" style="width:0.85em;height:0.85em;"><use href="#icon-alert"/></svg> <span data-i18n="home.why.panelOrder.allergy">Shellfish allergy — no shrimp on side salad</span></span>
+                  <span class="tag-note" data-i18n="home.why.panelOrder.note">No substitutions</span>
                 </div>
               </div>
             </div>
@@ -329,59 +333,59 @@
         <div class="demo-grid">
           <div>
             <div class="section-head">
-              <span class="eyebrow">Try It Yourself</span>
-              <h2>Try iOrderUP Live</h2>
-              <p class="lede">Call our demo restaurant and experience how iOrderUP handles a restaurant phone order.</p>
+              <span class="eyebrow" data-i18n="home.live.eyebrow">Try It Yourself</span>
+              <h2 data-i18n="home.live.h2">Try iOrderUP Live</h2>
+              <p class="lede" data-i18n="home.live.lede">Call our demo restaurant and experience how iOrderUP handles a restaurant phone order.</p>
             </div>
             <div class="demo-card live-demo-card">
               <a class="demo-number" data-demo-phone href="#">+1 (878) 230-7408</a>
               <a class="btn btn-inverse call-cta" data-config-href="tel:demoPhoneRaw" href="#">
-                <svg class="icon"><use href="#icon-phone"/></svg> Call the Live Demo
+                <svg class="icon"><use href="#icon-phone"/></svg> <span data-i18n="home.live.cta">Call the Live Demo</span>
               </a>
               <div class="ticket demo-menu">
                 <div class="ticket-head">
-                  <span class="num"><svg class="icon" style="width:0.9em;height:0.9em;"><use href="#icon-book"/></svg> iOrderUP Demo Kitchen</span>
+                  <span class="num"><svg class="icon" style="width:0.9em;height:0.9em;"><use href="#icon-book"/></svg> <span data-i18n="home.live.menuTitle">iOrderUP Demo Kitchen</span></span>
                 </div>
                 <ul class="ticket-items">
-                  <li><span>Classic Burger</span><span>$10</span></li>
-                  <li><span>Cheeseburger</span><span>$11</span></li>
-                  <li><span>Chicken Sandwich</span><span>$10</span></li>
-                  <li><span>French Fries</span><span>$4</span></li>
-                  <li><span>Sprite / Coca-Cola</span><span>$3</span></li>
+                  <li><span data-i18n="home.live.item1">Classic Burger</span><span>$10</span></li>
+                  <li><span data-i18n="home.live.item2">Cheeseburger</span><span>$11</span></li>
+                  <li><span data-i18n="home.live.item3">Chicken Sandwich</span><span>$10</span></li>
+                  <li><span data-i18n="home.live.item4">French Fries</span><span>$4</span></li>
+                  <li><span data-i18n="home.live.item5">Sprite / Coca-Cola</span><span>$3</span></li>
                 </ul>
               </div>
-              <p class="demo-try-phrase">Try saying: “I'd like a cheeseburger with no onions and a Sprite.”</p>
-              <p class="demo-disclaimer">Demo only — no real order will be placed.</p>
+              <p class="demo-try-phrase" data-i18n="home.live.tryPhrase">Try saying: “I'd like a cheeseburger with no onions and a Sprite.”</p>
+              <p class="demo-disclaimer" data-i18n="home.live.disclaimer">Demo only — no real order will be placed.</p>
             </div>
           </div>
 
           <div id="contact">
             <div class="section-head">
-              <span class="eyebrow">Contact</span>
-              <h2>Ready to Stop Missing Orders?</h2>
-              <p class="lede">Tell us about your restaurant and we'll set up a demo.</p>
+              <span class="eyebrow" data-i18n="home.contact.eyebrow">Contact</span>
+              <h2 data-i18n="home.contact.h2">Ready to Stop Missing Orders?</h2>
+              <p class="lede" data-i18n="home.contact.lede">Tell us about your restaurant and we'll set up a demo.</p>
             </div>
 
             <form id="demo-form" class="demo-request-form">
               <div class="form-grid">
                 <div class="form-row">
-                  <label for="f-name">Name</label>
+                  <label for="f-name" data-i18n="home.contact.nameLabel">Name</label>
                   <input id="f-name" name="name" type="text" autocomplete="name" required />
                 </div>
                 <div class="form-row">
-                  <label for="f-restaurant">Restaurant Name</label>
+                  <label for="f-restaurant" data-i18n="home.contact.restaurantLabel">Restaurant Name</label>
                   <input id="f-restaurant" name="restaurant" type="text" autocomplete="organization" required />
                 </div>
                 <div class="form-row">
-                  <label for="f-phone">Phone</label>
+                  <label for="f-phone" data-i18n="home.contact.phoneLabel">Phone</label>
                   <input id="f-phone" name="phone" type="tel" autocomplete="tel" required />
                 </div>
                 <div class="form-row">
-                  <label for="f-email">Email</label>
+                  <label for="f-email" data-i18n="home.contact.emailLabel">Email</label>
                   <input id="f-email" name="email" type="email" autocomplete="email" required />
                 </div>
               </div>
-              <button type="submit" class="btn btn-inverse">Book a Demo</button>
+              <button type="submit" class="btn btn-inverse" data-i18n="home.contact.submit">Book a Demo</button>
               <p id="demo-form-note" class="form-note" role="status"></p>
             </form>
           </div>
@@ -393,21 +397,21 @@
           <div class="contact-card">
             <div class="card-icon"><svg class="icon"><use href="#icon-pin"/></svg></div>
             <div>
-              <h3>Location</h3>
+              <h3 data-i18n="home.contact.gridLocation">Location</h3>
               <p data-config="location">North Charleston, South Carolina</p>
             </div>
           </div>
           <div class="contact-card">
             <div class="card-icon"><svg class="icon"><use href="#icon-mail"/></svg></div>
             <div>
-              <h3>Email</h3>
+              <h3 data-i18n="home.contact.gridEmail">Email</h3>
               <p><a data-config="contactEmail" data-config-href="mailto:contactEmail" href="#">oscardanielmurillo06@gmail.com</a></p>
             </div>
           </div>
           <div class="contact-card">
             <div class="card-icon"><svg class="icon"><use href="#icon-phone"/></svg></div>
             <div>
-              <h3>Phone</h3>
+              <h3 data-i18n="home.contact.gridPhone">Phone</h3>
               <p><a data-config="contactPhoneDisplay" data-config-href="tel:contactPhoneRaw" href="#">+1 (562) 638-8094</a></p>
             </div>
           </div>
@@ -420,16 +424,17 @@
   <!-- 8/9. Footer — links to Privacy Policy and Terms of Service -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div>© <span data-config="currentYear">2026</span> <span data-config="legalBusinessName">iOrderUP</span>. All rights reserved.</div>
+      <div>© <span data-config="currentYear">2026</span> <span data-config="legalBusinessName">iOrderUP</span><span data-i18n="common.footer.rights">. All rights reserved.</span></div>
       <div class="footer-links">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-        <a href="mailto:oscardanielmurillo06@gmail.com" data-config-href="mailto:contactEmail">Contact</a>
+        <a href="privacy.html" data-i18n="common.footer.privacy">Privacy Policy</a>
+        <a href="terms.html" data-i18n="common.footer.terms">Terms of Service</a>
+        <a href="mailto:oscardanielmurillo06@gmail.com" data-config-href="mailto:contactEmail" data-i18n="common.footer.contactLink">Contact</a>
       </div>
     </div>
   </footer>
 
   <script src="assets/js/config.js"></script>
+  <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

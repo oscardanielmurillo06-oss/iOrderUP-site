@@ -36,31 +36,34 @@
   // Demo request form. CONFIG.demoFormEndpoint is the single place to
   // connect this to a real inbox later (see config.js). Until it's set,
   // we never fake a successful submission — we just tell the visitor
-  // how to reach us directly.
+  // how to reach us directly. Status text comes from i18n.js so it always
+  // matches the visitor's selected language.
   var demoForm = document.getElementById("demo-form");
   if (demoForm) {
     var demoFormNote = document.getElementById("demo-form-note");
     var demoFormSubmit = demoForm.querySelector('button[type="submit"]');
     var email = CONFIG.contactEmail || "";
     var phone = CONFIG.contactPhoneDisplay || "";
-    var notConnectedMessage =
-      "This form isn't connected to an inbox yet — please email us directly at " +
-      email + (phone ? " or call " + phone : "") +
-      " and we'll set up your demo.";
+    var t = function (key) {
+      return window.IORDERUP_I18N ? window.IORDERUP_I18N.t(key) : "";
+    };
 
     demoForm.addEventListener("submit", function (e) {
       e.preventDefault();
       if (!demoFormNote) return;
 
       if (!CONFIG.demoFormEndpoint) {
-        demoFormNote.textContent = notConnectedMessage;
+        demoFormNote.textContent =
+          t("home.formStatus.notConnectedPrefix") + email +
+          (phone ? t("home.formStatus.orCall") + phone : "") +
+          t("home.formStatus.notConnectedSuffix");
         demoFormNote.classList.add("is-visible");
         return;
       }
 
       var formData = new FormData(demoForm);
       if (demoFormSubmit) demoFormSubmit.disabled = true;
-      demoFormNote.textContent = "Sending…";
+      demoFormNote.textContent = t("home.formStatus.sending");
       demoFormNote.classList.add("is-visible");
 
       fetch(CONFIG.demoFormEndpoint, {
@@ -70,13 +73,14 @@
       })
         .then(function (res) {
           if (!res.ok) throw new Error("Request failed");
-          demoFormNote.textContent = "Thanks! We received your request and will reach out shortly.";
+          demoFormNote.textContent = t("home.formStatus.success");
           demoForm.reset();
         })
         .catch(function () {
           demoFormNote.textContent =
-            "Something went wrong sending this — please email us directly at " +
-            email + (phone ? " or call " + phone : "") + ".";
+            t("home.formStatus.errorPrefix") + email +
+            (phone ? t("home.formStatus.orCall") + phone : "") +
+            t("home.formStatus.errorSuffix");
         })
         .finally(function () {
           if (demoFormSubmit) demoFormSubmit.disabled = false;
