@@ -24,10 +24,9 @@ window.IORDERUP_CONFIG = {
   contactPhoneDisplay: "+1 (562) 638-8094",
   contactPhoneRaw: "+15626388094",
 
-  // Live demo line — set both values once a real demo number exists.
-  // Leave demoPhoneRaw empty to show a "coming soon" badge instead of a tel: link.
-  demoPhoneDisplay: "Demo line — coming soon",
-  demoPhoneRaw: "",
+  // Live demo line — visitors can call this number to try iOrderUP for real.
+  demoPhoneDisplay: "+1 (878) 230-7408",
+  demoPhoneRaw: "+18782307408",
 
   // "Book a Demo" form endpoint. This is the ONE place to connect the
   // contact form to a real inbox — set it to a form backend URL (e.g. a

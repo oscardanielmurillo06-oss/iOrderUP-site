@@ -265,9 +265,6 @@ p { color: var(--ink-soft); margin: 0 0 14px; }
 
 /* Demo section */
 
-.demo-section { background: var(--ink); color: #fff; }
-.demo-section .section-head h2 { color: #fff; }
-.demo-section .section-head .lede { color: rgba(255,255,255,0.65); }
 .demo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
 .demo-card {
   background: rgba(255,255,255,0.04); border: 1px solid var(--border-dark); border-radius: var(--radius-lg);
@@ -277,24 +274,15 @@ p { color: var(--ink-soft); margin: 0 0 14px; }
 .demo-card h3 .icon { color: rgba(255,255,255,0.7); }
 .demo-card p { color: rgba(255,255,255,0.65); font-size: 0.94rem; }
 
-.player { display: flex; align-items: center; gap: 14px; margin: 16px 0 6px; }
-.play-btn {
-  width: 48px; height: 48px; border-radius: 50%; background: rgba(255,255,255,0.08);
-  border: 1px solid var(--border-dark); color: #fff; display: flex; align-items: center; justify-content: center;
-  flex-shrink: 0; cursor: not-allowed;
-}
-.waveform { display: flex; align-items: center; gap: 3px; flex: 1; height: 32px; }
-.waveform span { width: 3px; border-radius: 2px; background: rgba(255,255,255,0.25); }
-.player-meta { display: flex; justify-content: space-between; font-size: 0.75rem; color: rgba(255,255,255,0.4); font-variant-numeric: tabular-nums; }
-.badge-soon {
-  display: inline-flex; align-items: center; gap: 6px; font-size: 0.72rem; font-weight: 700;
-  color: rgba(255,255,255,0.85); background: rgba(255,255,255,0.08); padding: 4px 10px; border-radius: 999px; margin-top: 12px;
-  border: 1px solid var(--border-dark);
-}
-
-.demo-number { font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; font-size: 1.6rem; font-weight: 800; color: #fff; margin: 14px 0 4px; display: block; overflow-wrap: anywhere; }
+.demo-number { font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; font-size: 1.6rem; font-weight: 800; color: #fff; margin: 0 0 16px; display: block; overflow-wrap: anywhere; }
 .demo-number.is-disabled { color: rgba(255,255,255,0.45); cursor: default; }
 .demo-number.is-disabled:hover { text-decoration: none; }
+
+.call-cta { margin-bottom: 20px; }
+.demo-menu { margin: 0 0 16px; }
+.demo-menu .ticket-head .num { display: flex; align-items: center; gap: 6px; }
+.demo-try-phrase { font-style: italic; color: rgba(255,255,255,0.75); font-size: 0.92rem; margin-bottom: 10px; }
+.demo-disclaimer { font-size: 0.78rem; color: rgba(255,255,255,0.45); margin: 0; }
 
 /* How it works */
 

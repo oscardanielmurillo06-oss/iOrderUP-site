@@ -323,75 +323,69 @@
       </div>
     </section>
 
-    <!-- 6. Demo / Hear It In Action -->
-    <section id="demo" class="demo-section">
+    <!-- 6/7. Try iOrderUP Live + Book a Demo -->
+    <section id="demo" class="contact-section">
       <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">See It Yourself</span>
-          <h2 style="text-align:left;">Hear iOrderUP In Action</h2>
-          <p class="lede">Hear how iOrderUP handles a call from start to finish, or call the demo line yourself.</p>
-        </div>
         <div class="demo-grid">
-          <div class="demo-card">
-            <h3><svg class="icon"><use href="#icon-mic"/></svg> Sample Call Recording</h3>
-            <p>Hear how iOrderUP answers a call, takes the order, and knows when to hand off.</p>
-            <div class="player">
-              <div class="play-btn" aria-disabled="true"><svg class="icon" style="width:1.2em;height:1.2em;"><use href="#icon-play"/></svg></div>
-              <div class="waveform" aria-hidden="true">
-                <span style="height:40%"></span><span style="height:70%"></span><span style="height:30%"></span>
-                <span style="height:90%"></span><span style="height:50%"></span><span style="height:65%"></span>
-                <span style="height:35%"></span><span style="height:80%"></span><span style="height:45%"></span>
-                <span style="height:60%"></span><span style="height:30%"></span><span style="height:75%"></span>
-                <span style="height:40%"></span><span style="height:55%"></span><span style="height:25%"></span>
+          <div>
+            <div class="section-head">
+              <span class="eyebrow">Try It Yourself</span>
+              <h2>Try iOrderUP Live</h2>
+              <p class="lede">Call our demo restaurant and experience how iOrderUP handles a restaurant phone order.</p>
+            </div>
+            <div class="demo-card live-demo-card">
+              <a class="demo-number" data-demo-phone href="#">+1 (878) 230-7408</a>
+              <a class="btn btn-inverse call-cta" data-config-href="tel:demoPhoneRaw" href="#">
+                <svg class="icon"><use href="#icon-phone"/></svg> Call the Live Demo
+              </a>
+              <div class="ticket demo-menu">
+                <div class="ticket-head">
+                  <span class="num"><svg class="icon" style="width:0.9em;height:0.9em;"><use href="#icon-book"/></svg> iOrderUP Demo Kitchen</span>
+                </div>
+                <ul class="ticket-items">
+                  <li><span>Classic Burger</span><span>$10</span></li>
+                  <li><span>Cheeseburger</span><span>$11</span></li>
+                  <li><span>Chicken Sandwich</span><span>$10</span></li>
+                  <li><span>French Fries</span><span>$4</span></li>
+                  <li><span>Sprite / Coca-Cola</span><span>$3</span></li>
+                </ul>
               </div>
+              <p class="demo-try-phrase">Try saying: “I'd like a cheeseburger with no onions and a Sprite.”</p>
+              <p class="demo-disclaimer">Demo only — no real order will be placed.</p>
             </div>
-            <div class="player-meta"><span>0:00</span><span>—:—</span></div>
-            <span class="badge-soon"><svg class="icon" style="width:0.85em;height:0.85em;"><use href="#icon-info"/></svg> Demo call recording — coming soon</span>
           </div>
 
-          <div class="demo-card">
-            <h3><svg class="icon"><use href="#icon-phone"/></svg> Call the Demo Line</h3>
-            <p>Once live, you'll be able to call this number to hear iOrderUP answer, take an order, and hand off when needed.</p>
-            <a class="demo-number is-disabled" data-demo-phone href="#">Demo line — coming soon</a>
-            <p style="margin-top:16px;">
-              <a href="#contact" class="btn btn-inverse">Book a Demo</a>
-            </p>
+          <div id="contact">
+            <div class="section-head">
+              <span class="eyebrow">Contact</span>
+              <h2>Ready to Stop Missing Orders?</h2>
+              <p class="lede">Tell us about your restaurant and we'll set up a demo.</p>
+            </div>
+
+            <form id="demo-form" class="demo-request-form">
+              <div class="form-grid">
+                <div class="form-row">
+                  <label for="f-name">Name</label>
+                  <input id="f-name" name="name" type="text" autocomplete="name" required />
+                </div>
+                <div class="form-row">
+                  <label for="f-restaurant">Restaurant Name</label>
+                  <input id="f-restaurant" name="restaurant" type="text" autocomplete="organization" required />
+                </div>
+                <div class="form-row">
+                  <label for="f-phone">Phone</label>
+                  <input id="f-phone" name="phone" type="tel" autocomplete="tel" required />
+                </div>
+                <div class="form-row">
+                  <label for="f-email">Email</label>
+                  <input id="f-email" name="email" type="email" autocomplete="email" required />
+                </div>
+              </div>
+              <button type="submit" class="btn btn-inverse">Book a Demo</button>
+              <p id="demo-form-note" class="form-note" role="status"></p>
+            </form>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- 7. Contact -->
-    <section id="contact" class="contact-section">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Contact</span>
-          <h2>Ready to Stop Missing Orders?</h2>
-          <p class="lede">Tell us about your restaurant and we'll set up a demo.</p>
-        </div>
-
-        <form id="demo-form" class="demo-request-form">
-          <div class="form-grid">
-            <div class="form-row">
-              <label for="f-name">Name</label>
-              <input id="f-name" name="name" type="text" autocomplete="name" required />
-            </div>
-            <div class="form-row">
-              <label for="f-restaurant">Restaurant Name</label>
-              <input id="f-restaurant" name="restaurant" type="text" autocomplete="organization" required />
-            </div>
-            <div class="form-row">
-              <label for="f-phone">Phone</label>
-              <input id="f-phone" name="phone" type="tel" autocomplete="tel" required />
-            </div>
-            <div class="form-row">
-              <label for="f-email">Email</label>
-              <input id="f-email" name="email" type="email" autocomplete="email" required />
-            </div>
-          </div>
-          <button type="submit" class="btn btn-inverse">Book a Demo</button>
-          <p id="demo-form-note" class="form-note" role="status"></p>
-        </form>
 
         <div class="contact-divider"></div>
 
